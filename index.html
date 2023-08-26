@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js" defer></script>
+</head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background:#fff;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.todo-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.input-container input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  margin-right: 1em;
+}
+
+.input-container button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #f7f7f7;
+}
+
+li.done,li.done span {
+  background-color: #c92222;
+  text-decoration: line-through;
+}
+ 
+li input[type=checkbox] {
+  margin-right: 10px;
+}
+
+li button {
+  margin-left: auto;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #dc3545;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+</style>
+<body >
+    <h1>Simpleng Todo-List ni Zeus</h1>
+
+    <div class="todo-container">
+        <form class="input-container">
+            <input  type="text" id="todo-textbox" autocomplete="off" required>
+            <button id="add-todo-btn" type="submit">Add</button>
+        </form>
+        
+        <br>
+        <ul id="todo-container">
+        
+        </ul>
+    </div>
+</body>
+</html>
